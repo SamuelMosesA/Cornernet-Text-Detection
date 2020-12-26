@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="_cpools"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\.local\;CMake Files\..\..\..\..\..\..\..\.local\lib\;CMake Files\..\..\..\..\..\..\..\.local\lib\python3.6\;CMake Files\..\..\..\..\..\..\..\.local\lib\python3.6\site-packages\;CMake Files\..\..\..\..\..\..\..\.local\lib\python3.6\site-packages\torch\;CMake Files\..\..\..\..\..\..\..\.local\lib\python3.6\site-packages\torch\share\;CMake Files\..\..\..\..\..\..\..\.local\lib\python3.6\site-packages\torch\share\cmake\;CMake Files\..\..\..\..\..\..\..\.local\lib\python3.6\site-packages\torch\share\cmake\Torch\;CMake Files\..\..\..\..\..\..\..\.local\lib\python3.6\site-packages\torch\share\cmake\Caffe2\;CMake Files\..\..\..\..\..\..\..\.local\lib\python3.6\site-packages\torch\share\cmake\Caffe2\public\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/samuel-moses/Programming Projects/PycharmProjects/Text Detection/CenterNet/models/py_utils/_cpools/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/samuel-moses/Programming\ Projects/PycharmProjects/Text\ Detection/CenterNet/models/py_utils/_cpools/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/samuel-moses/Programming\ Projects/PycharmProjects/Text\ Detection/CenterNet/models/py_utils/_cpools/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/samuel-moses/Programming\ Projects/PycharmProjects/Text\ Detection/CenterNet/models/py_utils/_cpools/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/samuel-moses/Programming\ Projects/PycharmProjects/Text\ Detection/CenterNet/models/py_utils/_cpools/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/samuel-moses/Programming Projects/PycharmProjects/Text Detection/CenterNet/models/py_utils/_cpools/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/samuel-moses/Programming\ Projects/PycharmProjects/Text\ Detection/CenterNet/models/py_utils/_cpools/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/samuel-moses/Programming\ Projects/PycharmProjects/Text\ Detection/CenterNet/models/py_utils/_cpools/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/samuel-moses/Programming\ Projects/PycharmProjects/Text\ Detection/CenterNet/models/py_utils/_cpools/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/samuel-moses/Programming\ Projects/PycharmProjects/Text\ Detection/CenterNet/models/py_utils/_cpools/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/samuel-moses/Programming Projects/PycharmProjects/Text Detection/CenterNet/models/py_utils/_cpools/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/samuel-moses/Programming\ Projects/PycharmProjects/Text\ Detection/CenterNet/models/py_utils/_cpools/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/samuel-moses/Programming\ Projects/PycharmProjects/Text\ Detection/CenterNet/models/py_utils/_cpools/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/samuel-moses/Programming\ Projects/PycharmProjects/Text\ Detection/CenterNet/models/py_utils/_cpools/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/samuel-moses/Programming\ Projects/PycharmProjects/Text\ Detection/CenterNet/models/py_utils/_cpools/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="_cpools">
+				<Option output="/home/samuel-moses/Programming Projects/PycharmProjects/Text Detection/CenterNet/models/py_utils/_cpools/cmake-build-debug/_cpools" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DAT_PARALLEL_OPENMP=1"/>
+					<Add directory="/home/samuel-moses/.local/lib/python3.6/site-packages/torch/include"/>
+					<Add directory="/home/samuel-moses/.local/lib/python3.6/site-packages/torch/include/torch/csrc/api/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/samuel-moses/Programming\ Projects/PycharmProjects/Text\ Detection/CenterNet/models/py_utils/_cpools/cmake-build-debug/Makefile&quot;  VERBOSE=1 _cpools"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/samuel-moses/Programming\ Projects/PycharmProjects/Text\ Detection/CenterNet/models/py_utils/_cpools/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/samuel-moses/Programming\ Projects/PycharmProjects/Text\ Detection/CenterNet/models/py_utils/_cpools/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/samuel-moses/Programming\ Projects/PycharmProjects/Text\ Detection/CenterNet/models/py_utils/_cpools/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="_cpools/fast">
+				<Option output="/home/samuel-moses/Programming Projects/PycharmProjects/Text Detection/CenterNet/models/py_utils/_cpools/cmake-build-debug/_cpools" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir=""/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DAT_PARALLEL_OPENMP=1"/>
+					<Add directory="/home/samuel-moses/.local/lib/python3.6/site-packages/torch/include"/>
+					<Add directory="/home/samuel-moses/.local/lib/python3.6/site-packages/torch/include/torch/csrc/api/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/samuel-moses/Programming\ Projects/PycharmProjects/Text\ Detection/CenterNet/models/py_utils/_cpools/cmake-build-debug/Makefile&quot;  VERBOSE=1 _cpools/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/samuel-moses/Programming\ Projects/PycharmProjects/Text\ Detection/CenterNet/models/py_utils/_cpools/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/samuel-moses/Programming\ Projects/PycharmProjects/Text\ Detection/CenterNet/models/py_utils/_cpools/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/samuel-moses/Programming\ Projects/PycharmProjects/Text\ Detection/CenterNet/models/py_utils/_cpools/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/samuel-moses/Programming Projects/PycharmProjects/Text Detection/CenterNet/models/py_utils/_cpools/src/bottom_pool.cpp">
+			<Option target="_cpools"/>
+		</Unit>
+		<Unit filename="/home/samuel-moses/Programming Projects/PycharmProjects/Text Detection/CenterNet/models/py_utils/_cpools/src/left_pool.cpp">
+			<Option target="_cpools"/>
+		</Unit>
+		<Unit filename="/home/samuel-moses/Programming Projects/PycharmProjects/Text Detection/CenterNet/models/py_utils/_cpools/src/right_pool.cpp">
+			<Option target="_cpools"/>
+		</Unit>
+		<Unit filename="/home/samuel-moses/Programming Projects/PycharmProjects/Text Detection/CenterNet/models/py_utils/_cpools/src/top_pool.cpp">
+			<Option target="_cpools"/>
+		</Unit>
+		<Unit filename="/home/samuel-moses/Programming Projects/PycharmProjects/Text Detection/CenterNet/models/py_utils/_cpools/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/samuel-moses/Programming Projects/PycharmProjects/Text Detection/CenterNet/models/py_utils/_cpools/../../../../../../../.local/lib/python3.6/site-packages/torch/share/cmake/Torch/TorchConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\.local\lib\python3.6\site-packages\torch\share\cmake\Torch\"/>
+		</Unit>
+		<Unit filename="/home/samuel-moses/Programming Projects/PycharmProjects/Text Detection/CenterNet/models/py_utils/_cpools/../../../../../../../.local/lib/python3.6/site-packages/torch/share/cmake/Torch/TorchConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\.local\lib\python3.6\site-packages\torch\share\cmake\Torch\"/>
+		</Unit>
+		<Unit filename="/home/samuel-moses/Programming Projects/PycharmProjects/Text Detection/CenterNet/models/py_utils/_cpools/../../../../../../../.local/lib/python3.6/site-packages/torch/share/cmake/Caffe2/Caffe2Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\.local\lib\python3.6\site-packages\torch\share\cmake\Caffe2\"/>
+		</Unit>
+		<Unit filename="/home/samuel-moses/Programming Projects/PycharmProjects/Text Detection/CenterNet/models/py_utils/_cpools/../../../../../../../.local/lib/python3.6/site-packages/torch/share/cmake/Caffe2/Caffe2ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\.local\lib\python3.6\site-packages\torch\share\cmake\Caffe2\"/>
+		</Unit>
+		<Unit filename="/home/samuel-moses/Programming Projects/PycharmProjects/Text Detection/CenterNet/models/py_utils/_cpools/../../../../../../../.local/lib/python3.6/site-packages/torch/share/cmake/Caffe2/Caffe2Targets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\.local\lib\python3.6\site-packages\torch\share\cmake\Caffe2\"/>
+		</Unit>
+		<Unit filename="/home/samuel-moses/Programming Projects/PycharmProjects/Text Detection/CenterNet/models/py_utils/_cpools/../../../../../../../.local/lib/python3.6/site-packages/torch/share/cmake/Caffe2/Caffe2Targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\.local\lib\python3.6\site-packages\torch\share\cmake\Caffe2\"/>
+		</Unit>
+		<Unit filename="/home/samuel-moses/Programming Projects/PycharmProjects/Text Detection/CenterNet/models/py_utils/_cpools/../../../../../../../.local/lib/python3.6/site-packages/torch/share/cmake/Caffe2/public/mkl.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\.local\lib\python3.6\site-packages\torch\share\cmake\Caffe2\public\"/>
+		</Unit>
+		<Unit filename="/home/samuel-moses/Programming Projects/PycharmProjects/Text Detection/CenterNet/models/py_utils/_cpools/../../../../../../../.local/lib/python3.6/site-packages/torch/share/cmake/Caffe2/public/mkldnn.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\.local\lib\python3.6\site-packages\torch\share\cmake\Caffe2\public\"/>
+		</Unit>
+		<Unit filename="/home/samuel-moses/Programming Projects/PycharmProjects/Text Detection/CenterNet/models/py_utils/_cpools/../../../../../../../.local/lib/python3.6/site-packages/torch/share/cmake/Caffe2/public/threads.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\.local\lib\python3.6\site-packages\torch\share\cmake\Caffe2\public\"/>
+		</Unit>
+		<Unit filename="/home/samuel-moses/Programming Projects/PycharmProjects/Text Detection/CenterNet/models/py_utils/_cpools/../../../../../../../.local/lib/python3.6/site-packages/torch/share/cmake/Caffe2/public/utils.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\.local\lib\python3.6\site-packages\torch\share\cmake\Caffe2\public\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

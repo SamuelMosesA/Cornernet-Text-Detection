@@ -1,0 +1,15 @@
+/home/samuel-moses/Software/clion-2020.1.2/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/home/samuel-moses/Programming Projects/PycharmProjects/Text Detection/CenterNet/models/py_utils/_cpools"
+CMake Warning (dev) at /home/samuel-moses/Software/clion-2020.1.2/bin/cmake/linux/share/cmake-3.17/Modules/FindPackageHandleStandardArgs.cmake:272 (message):
+  The package name passed to `find_package_handle_standard_args` (torch) does
+  not match the name of the calling package (Torch).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  /home/samuel-moses/.local/lib/python3.6/site-packages/torch/share/cmake/Torch/TorchConfig.cmake:130 (find_package_handle_standard_args)
+  CMakeLists.txt:6 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found torch: /home/samuel-moses/Software/libtorch/lib/libtorch.so  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/samuel-moses/Programming Projects/PycharmProjects/Text Detection/CenterNet/models/py_utils/_cpools/cmake-build-debug
