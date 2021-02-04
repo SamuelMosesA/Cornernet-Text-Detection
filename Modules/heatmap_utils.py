@@ -55,8 +55,8 @@ class heatmaps(nn.Module):
         tl_scores, tl_inds, tl_xs, tl_ys = top_k(tl_heatmp, K)
         br_scores, br_inds, br_xs, br_ys = top_k(br_heatmp, K)
 
-        #this view diffent dimensions is to make all possible combinations of tl and br
-        #they are like the column and row labels
+        # this view diffent dimensions is to make all possible combinations of tl and br
+        # they are like the column and row labels
         tl_xs = tl_xs.view(batch, K, 1).expand(batch, K, K)
         tl_ys = tl_ys.view(batch, K, 1).expand(batch, K, K)
         br_xs = br_xs.view(batch, 1, K).expand(batch, K, K)
@@ -81,7 +81,6 @@ class heatmaps(nn.Module):
         br_scores = br_scores.view(batch, 1, K).expand(batch, K, K)
         scores = (tl_scores + br_scores) / 2
 
-
         # rejecting not possible boxes
         dists_inds = (dists > ae_threshold)
         width_inds = (br_xs < tl_xs)
@@ -93,10 +92,10 @@ class heatmaps(nn.Module):
         scores[width_inds] = -1
         scores[height_inds] = -1
 
-        scores = scores.view(batch,-1)
+        scores = scores.view(batch, -1)
         scores, inds = torch.topk(scores, num_dets)
         scores = scores.unsqueeze(2)
-        bboxes = bboxes.view(batch,-1,4)
+        bboxes = bboxes.view(batch, -1, 4)
         bboxes = gather_ind(bboxes, inds)
 
         tl_scores = tl_scores.contiguous().view(batch, -1, 1)
@@ -104,7 +103,7 @@ class heatmaps(nn.Module):
         br_scores = br_scores.contiguous().view(batch, -1, 1)
         br_scores = gather_ind(br_scores, inds).float()
 
-        detections = torch.cat([bboxes,scores, tl_scores, br_scores], dim=2)
+        detections = torch.cat([bboxes, scores, tl_scores, br_scores], dim=2)
 
         return detections
 

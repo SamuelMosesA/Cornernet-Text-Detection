@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../CornerNet/.idea/CornerNet.iml" filepath="$PROJECT_DIR$/../CornerNet/.idea/CornerNet.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Cornernet Own Implementation.iml" filepath="$PROJECT_DIR$/.idea/Cornernet Own Implementation.iml" />
     </modules>
   </component>

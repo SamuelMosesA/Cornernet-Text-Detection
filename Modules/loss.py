@@ -28,6 +28,7 @@ def focal_loss(pred_mp: torch.Tensor, gt_mp: torch.Tensor):
 
 
 def push_pull_loss(tag_tl: torch.Tensor, tag_br: torch.Tensor, tag_mask: torch.Tensor):
+    # the ind maps will also have a fixed number of maps. so we need the mask
     num = tag_mask.sum(dim=1, keepdim=True).float()
     tag_tl = tag_tl.squeeze()
     tag_br = tag_br.squeeze()
@@ -64,3 +65,31 @@ def regression_loss(regr, gt_regr, mask):
     regr_loss = nn.functional.smooth_l1_loss(regr, gt_regr, size_average=False)
     regr_loss = regr_loss / (num + 1e-4)
     return regr_loss
+
+
+class TotalLoss(nn.Module):
+    def __init__(self, pull_weight=1, push_weight=1, regr_weight=1):
+        super(TotalLoss, self).__init__()
+        self.pull_weight = pull_weight
+        self.push_weight = push_weight
+        self.regr_weight = regr_weight
+
+    def forward(self, pred, target):
+        tl_heatmp, br_heatmp = pred[:2]
+        tl_tags, br_tags = pred[2:4]
+        tl_regs, br_regs = pred[4:6]
+
+        targ_tl_heat, targ_br_heat = target[:2]
+        tl_tag_inds, br_tag_inds = target[2:4]
+        targ_tl_reg, targ_br_reg = target[4:6]
+        tag_masks = target[7]
+
+        heatmap_focal = focal_loss(tl_heatmp, targ_tl_heat) + (br_heatmp + targ_br_heat)
+        embed_push, embed_pull = push_pull_loss(tl_tags, br_tags, tag_masks)
+        regress_loss = regression_loss(tl_regs, targ_tl_reg, tag_masks) \
+                       + regression_loss(br_regs, targ_br_reg, tag_masks)
+
+        final_loss = heatmap_focal + self.push_weight * embed_push + \
+                     self.pull_weight * embed_pull * self.regr_weight * regress_loss
+
+        return final_loss.unsqueeze(0)

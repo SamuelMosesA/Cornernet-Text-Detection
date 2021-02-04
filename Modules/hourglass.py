@@ -17,6 +17,12 @@ class NormalConv(nn.Module):
 
 
 class rec_hourglass(nn.Module):
+    '''
+    This is a hourglass implementation using the recursive method
+    parameters:
+    module_channels-this is a list of all the number of channels in the levels of houtglass
+    div_factor- it is a list l; h/l[i], w/l[i] gives the dimensions of the image at each level i
+    '''
     def __init__(self, module_channels, div_factor):
         super(rec_hourglass, self).__init__()
 
@@ -49,7 +55,7 @@ class rec_hourglass(nn.Module):
 class Hourglass(nn.Module):
     def __init__(self, in_channels, out_channels):
         super(Hourglass, self).__init__()
-        module_channels = [16, 64, 64, 128]
+        module_channels = [16, 64, 64, 128] #you can change these if the model is taking up too much memory
         module_div = [4, 8, 16, 32]
 
         self.pre = nn.Sequential(nn.Conv2d(in_channels, 4, kernel_size=3, padding=1),
@@ -58,6 +64,8 @@ class Hourglass(nn.Module):
                                  ConvBnRelu(8, 16),
                                  nn.MaxPool2d(kernel_size=2, stride=2),
                                  )
+        #this pre downsamples the n to 4 times smaller. Use x/4, y/4 and the respective offset
+        #so you can try by giving it a large input
         self.hg = rec_hourglass(module_channels, module_div)
         self.post = nn.Conv2d(4, out_channels, kernel_size=3, padding=1)
 
