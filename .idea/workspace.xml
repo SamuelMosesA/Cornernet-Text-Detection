@@ -19,16 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d338c7f-fddf-4b70-bd35-688fee5fe982" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Modules/dataset.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Cornernet Own Implementation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Cornernet Own Implementation.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="4d338c7f-fddf-4b70-bd35-688fee5fe982" name="Default Changelist" comment="finished loss fn">
+      <change afterPath="$PROJECT_DIR$/CornerNet.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Modules/heatmap_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/heatmap_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/hourglass.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/hourglass.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Modules/loss.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/loss.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,8 +165,17 @@
       <workItem from="1609205070645" duration="114000" />
       <workItem from="1612422547682" duration="8000" />
       <workItem from="1612434836373" duration="73000" />
-      <workItem from="1612435033363" duration="5746000" />
+      <workItem from="1612435033363" duration="6049000" />
+      <workItem from="1612443168193" duration="3518000" />
     </task>
+    <task id="LOCAL-00001" summary="finished loss fn">
+      <created>1612442724566</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1612442724566</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,6 +192,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="finished loss fn" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished loss fn" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Cornernet_Text_Detection$dataset.coverage" NAME="dataset Coverage Results" MODIFIED="1608999286882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Modules" />

@@ -7,7 +7,7 @@ from Modules.pooling_layers import TopLeftPool, BottomRightPool
 from Modules.utils import ConvBnRelu, ConvWithK1Conv, permute_gather_ind_values, gather_ind, conv_nms, top_k
 
 
-class heatmaps(nn.Module):
+class Heatmaps(nn.Module):
     def __init__(self, in_channels, conv_channel):
         super().__init__()
         self.pre_heat_conv = ConvBnRelu(in_channels, conv_channel, k=3)
@@ -120,7 +120,6 @@ class heatmaps(nn.Module):
         heats = [tl_heatmp, br_heatmp, tl_tagmp, br_tagmp, tl_regmp, br_regmp]
 
         if self.training:
-            assert len(args) == 3, "3 arguments expected"
             return self._train(heats, *args)
         else:
             return self._eval(heats, *args)

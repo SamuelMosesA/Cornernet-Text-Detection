@@ -79,10 +79,10 @@ class TotalLoss(nn.Module):
         tl_tags, br_tags = pred[2:4]
         tl_regs, br_regs = pred[4:6]
 
-        targ_tl_heat, targ_br_heat = target[:2]
-        tl_tag_inds, br_tag_inds = target[2:4]
-        targ_tl_reg, targ_br_reg = target[4:6]
-        tag_masks = target[7]
+        targ_tl_heat, targ_br_heat = target[:2]  #this is the target heatmap
+        tl_tag_inds, br_tag_inds = target[2:4]  #this is the indices for the tags
+        targ_tl_reg, targ_br_reg = target[4:6]  #target regression values
+        tag_masks = target[7] #a mask vector
 
         heatmap_focal = focal_loss(tl_heatmp, targ_tl_heat) + (br_heatmp + targ_br_heat)
         embed_push, embed_pull = push_pull_loss(tl_tags, br_tags, tag_masks)
@@ -93,3 +93,4 @@ class TotalLoss(nn.Module):
                      self.pull_weight * embed_pull * self.regr_weight * regress_loss
 
         return final_loss.unsqueeze(0)
+
